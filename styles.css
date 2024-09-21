@@ -26,7 +26,7 @@ body {
 
 .link {
     font-size: 20px; 
-    background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(186,186,186,1) 10%, rgba(161,161,161,1) 29%, rgba(133,133,133,1) 58%, rgba(111,111,111,1) 77%); 
+    background: radial-gradient(circle, rgb(240, 240, 240) 0%, rgba(173,173,173,1) 21%, rgb(201, 201, 201) 29%, rgb(180, 180, 180) 58%, rgb(151, 151, 151) 77%);
     background-clip: text;
     color: transparent;
     text-decoration: none;
@@ -36,14 +36,13 @@ body {
 
 .link:hover {
     background-clip: text; 
-    color: #0099ff36; 
-    transition: color 0.3s ease; /* Dodana animacja */
+    color: #00000036; 
+    transition: ease 1s all;
 }
-
 
 .small-text {
     font-size: 20px; 
-    background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(186,186,186,1) 10%, rgba(161,161,161,1) 29%, rgba(133,133,133,1) 58%, rgba(111,111,111,1) 77%); 
+    background: radial-gradient(circle, rgb(119, 119, 119) 0%, rgb(97, 97, 97) 10%, rgb(105, 105, 105) 29%, rgb(92, 92, 92) 58%, rgb(71, 71, 71) 77%);
     background-clip: text; 
     color: transparent; 
 }
@@ -62,3 +61,46 @@ body {
     height: 100%;
     z-index: -1; 
 }
+#notifications {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+  
+  .notification {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .notification.success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+  }
+  
+  .notification.error {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+  }
+  

@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>raizu.xyz</title>
       <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
 <body>
+    <audio autoplay loop crossorigin="use-credentials">
+        <source src="https://cdn.discordapp.com/attachments/773529086055284738/1287123050038431910/muzyka.mp3" type="audio/mp3">
+      </audio>
     <div id="particles-js"></div>
-
+    <div id="notifications"></div>
+    <script src="notify.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        <--- sory za shit code ale jestem w to gownem --->
+        <--- sory za shit code ale jestem w to gownem --->
+        <--- sory za shit code ale jestem w to gownem --->
+        document.addEventListener("DOMContentLoaded", function() {
+  notify('Zgrabowano IP', 'success');
+  setTimeout(function() {
+    notify('Zgrabowano cookiesy', 'success');
+  }, 2000);
+  setTimeout(function() {
+    notify('Nie zgrabowano tokenu DC', 'error');
+  }, 7000);
+        });
+      </script>
     <script>
 particlesJS("particles-js", {
     "particles": {
@@ -128,6 +147,13 @@ particlesJS("particles-js", {
     <div class="container">
         <p class="title">raizu.xyz</p>
         <a href="https://t.me/raizu777" class="link">telegram</a>
+        <a class="link" style="cursor: zoom-in" onclick="copyText('777raizu'); notify('Skopiowano do schowka!', 'success')">discord</a>
+        <a href="https://t.me/raizulc" class="link">legit checki</a>
+        <script>
+            function copyText(text) {
+              navigator.clipboard.writeText(text);
+            }
+          </script>
     </div>
 </body>
 </html>
