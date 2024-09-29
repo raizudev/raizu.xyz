@@ -19,19 +19,19 @@ body {
     background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(186,186,186,1) 10%, rgba(161,161,161,1) 29%, rgba(133,133,133,1) 58%, rgba(111,111,111,1) 77%); 
     background-clip: text; 
     color: transparent; 
-    font-size: 90px;
+    font-size: 9vh;
     font-weight: bold;
-    margin-bottom: -20px;
+    margin-bottom: -2vh;
 }
 
 .link {
-    font-size: 20px; 
+    font-size: 2vh; 
     background: radial-gradient(circle, rgb(240, 240, 240) 0%, rgba(173,173,173,1) 21%, rgb(201, 201, 201) 29%, rgb(180, 180, 180) 58%, rgb(151, 151, 151) 77%);
     background-clip: text;
     color: transparent;
     text-decoration: none;
     font-weight: bold; 
-    margin-bottom: 15px; 
+    margin-bottom: 1.5vh; 
 }
 
 .link:hover {
@@ -41,7 +41,7 @@ body {
 }
 
 .small-text {
-    font-size: 20px; 
+    font-size: 2vh; 
     background: radial-gradient(circle, rgb(119, 119, 119) 0%, rgb(97, 97, 97) 10%, rgb(105, 105, 105) 29%, rgb(92, 92, 92) 58%, rgb(71, 71, 71) 77%);
     background-clip: text; 
     color: transparent; 
@@ -63,18 +63,18 @@ body {
 }
 #notifications {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 1vh;
+    right: 1vh;
     z-index: 1000;
   }
   
   .notification {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 0.1vh solid #ddd;
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
+    border-radius: 0.5vh;
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
+    margin-bottom: 1vh;
     animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
   }
   @keyframes slideIn {
